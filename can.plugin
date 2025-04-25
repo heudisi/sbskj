@@ -1,18 +1,1 @@
-#!name=阿里云签到
-#!desc=阿里云签到
-#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1029.png
-
-[Argument]
-aliyunqd_enable = switch,true,false,tag=阿里云盘签到
-aliyunqdck_enable = switch,true,false,tag=阿里云盘CK
-
-[Script]
-# 定时执行签到脚本
-cron "0 7,11,17 * * *" script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=120, tag=阿里云签到, enable={aliyunqd_enable}, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AliYunDrive.png
-
-# 拦截认证请求获取Cookie
-http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=60, tag=aliyun, enable={aliyunqdck_enable}
-
-[MITM]
-# 修正后的域名列表
-hostname = auth.aliyundrive.com, auth.alipan.com
+666
