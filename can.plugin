@@ -2,7 +2,7 @@
 #!desc=阿里云签到
 #!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1029.png
 
-aliyunqd_enable = switch,true,false,tag=阿里云盘签到
+#aliyunqd_enable = switch,true,false,tag=阿里云盘签到
 
 aliyunqdck_enable = switch,true,false,tag=阿里云盘CK
 
